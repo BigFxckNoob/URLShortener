@@ -13,9 +13,6 @@
   <meta property="og:image" content="">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -25,9 +22,12 @@
 
 <body>
     <div class="wrapper">
+        <header>
+            <a href="index.php">Sadcat's URL Shortener</a>
+        </header>
         <form action="/app/shorten.php">
             <div class="form-container">
-                <input name="url" id="url" type="text" placeholder="Enter your url" required>
+                <input class="inputclass" name="url" id="url" type="text" placeholder="Enter your url" required>
             </div>
 
             <!-- 
@@ -37,21 +37,22 @@
             -->
 
             <input type="hidden" name="action" value="create">
-            <input type="submit" value="Shorten">
+            <input class="inputsubmit" type="submit" value="Shorten">
+
+            <div class="result-container">
+                <?php
+                if (isset($_GET['short_url'])) {
+                    echo '<input class="inputclass" type="text" value="' . $_GET['short_url'] . '" id="short-url" readonly>';
+                }
+                ?>
+            </div>
         </form>
-    </div>
+    
 
-    <div class="wrapper">
-        <div class="result-container">
-            <?php
-            if (isset($_GET['short_url'])) {
-                echo '<input type="text" value="' . $_GET['short_url'] . '" id="short-url" readonly>';
-            }
-            ?>
-        </div>
-    </div>
+    
+        
+    
 
-    <div class="wrapper">
         <div class="result-container">
             <?php
             if (isset($_GET['error'])) {

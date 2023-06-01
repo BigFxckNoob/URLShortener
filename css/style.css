@@ -84,6 +84,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  background-image: linear-gradient(to right, #242424, #302828);
+}
+
+header{
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+  color: #b8b7b7;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.inputclass{
+  text-align: center;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #b8b7b7;
+  width: 400px;
+}
+
+.inputsubmit{
+  text-align: center;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #b8b7b7;
+  width: 200px;
+  background-color: #242424;
+  color: #b8b7b7;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.inputsubmit:hover{
+  background-color: #b8b7b7;
+  color: #242424;
+  transition: 0.5s;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
