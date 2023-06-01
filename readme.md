@@ -28,4 +28,4 @@ git clone https://github.com/BigFxckNoob/URLShortener
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Sadcat/UrlShortener/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License.
