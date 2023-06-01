@@ -42,16 +42,11 @@
             <div class="result-container">
                 <?php
                 if (isset($_GET['short_url'])) {
-                    echo '<input class="inputclass" type="text" value="' . $_GET['short_url'] . '" id="short-url" readonly>';
+                    echo '<input class="inputclass" type="text" value="' . $_GET['short_url'] . '" id="short-url" readonly> <label class="copyicon" onclick="copy();">📋</label>';
                 }
                 ?>
             </div>
         </form>
-    
-
-    
-        
-    
 
         <div class="result-container">
             <?php
@@ -63,8 +58,6 @@
             ?>
         </div>
     </div>
-
-
 
     <script src="js/vendor/modernizr-3.12.0.min.js"></script>
     <script src="js/app.js"></script>

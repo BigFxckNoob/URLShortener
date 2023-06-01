@@ -112,6 +112,10 @@ form {
   height: 80vh;
 }
 
+input{
+  position: relative;
+}
+
 .inputclass{
   text-align: center;
   margin: 10px 0;
@@ -138,6 +142,16 @@ form {
   background-color: #b8b7b7;
   color: #242424;
   transition: 0.5s;
+}
+
+.copyicon{
+  position: absolute;
+  top: 60%;
+  right: 756px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* add shadow */
+  box-shadow: 0 0 10px rgb(87, 87, 87);
 }
 
 /* ==========================================================================
