@@ -14,6 +14,9 @@ function createurl(){
     }
     $short_part = substr(md5(uniqid(rand(), true)), 0, 7); // Create a random string for the short url
     $domain = $domains[array_rand($domains)];
+    if (substr($domain, -1) == "/"){
+        $domain = substr($domain, 0, -1); // remove the '/' in the domain if there is one.
+    };
     $short_url = $domain . "/" . $short_part;
     $sql = "SELECT * FROM url WHERE short_url = :short_url";
     $stmt = $conn->prepare($sql);
