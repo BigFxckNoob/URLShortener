@@ -15,7 +15,7 @@ function copy() {
             console.error('Failed to copy text to clipboard:', error);
             });
     } else {
-        console.warn('Clipboard API not available.');
+        console.warn('Clipboard API not available. Do you have a secured site?');
     }
 
 
