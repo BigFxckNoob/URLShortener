@@ -30,11 +30,6 @@
                 <input class="inputclass" name="url" id="url" type="text" placeholder="Enter your url" required>
             </div>
 
-            <!-- 
-            <div class="form-container">
-                <input type="text"placeholder="Enter short url">
-            </div> 
-            -->
 
             <input type="hidden" name="action" value="create">
             <input class="inputsubmit" type="submit" value="Shorten">
