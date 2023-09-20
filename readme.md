@@ -23,7 +23,7 @@ A URL shortener is a web tool that simplifies long and complex URLs into shorter
 Clone the repo
 
 ```sh
-git clone https://github.com/BigFxckNoob/URLShortener
+git clone https://github.com/BoyKrijnen/URLShortener
 ```
 
 ## License
